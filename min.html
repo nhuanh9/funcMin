@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [3, 5, 1, 8, -3, 7, 8];
+    let arr1 = [];
+
+    function minArr(arr) {
+        let min = arr[0];
+        if (arr.length !== 0) {
+            for (let i = 0; i < arr.length; i++) {
+                if (min > arr[i]) {
+                    min = arr[i];
+                }
+            }
+        } else {
+            min = 0;
+        }
+        return min;
+    }
+    document.write(minArr(arr)+"<br>");
+    document.write(minArr(arr1));
+
+</script>
+</body>
+</html>
